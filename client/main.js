@@ -90,13 +90,16 @@ function submitHandler(event) {
     event.preventDefault()
     
     let albumTitle = document.querySelector('#title')
-    let albumHearts = document.querySelector('input[name="hearts"]:checked')
     let albumImageURL = document.querySelector('#img')
+    let albumArtist = document.querySelector('#artist')
+    let albumHearts = document.querySelector('input[name="hearts"]:checked')
+    
 
 
     //create body object for post
     let body = {
         albumTitle: albumTitle.value,
+        albumArtist: albumArtist.value,
         albumHearts: albumHearts.value, 
         albumImageURL: albumImageURL.value
     }
@@ -104,6 +107,7 @@ function submitHandler(event) {
     createMusicAlbum(body)
 
     albumTitle.value = ''
+    albumArtist.value = ''
     albumHearts.checked = false
     albumImageURL.value = ''
 }
@@ -114,6 +118,7 @@ function createAlbumCard(album) {
 
     albumCard.innerHTML = `<img alt='album cover' src=${album.albumImageURL} class="album-cover"/>
     <p class="album-title">${album.albumTitle}</p>
+    <p class="album-title">${album.albumArtist}</p>
         <div class="btns-container">
         <button onclick="updateAlbum(${album.id}, 'decreaseHearts')">💔</button>
         <p class="album-hearts">${album.albumHearts} hearts</p>
