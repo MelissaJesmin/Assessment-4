@@ -1,3 +1,8 @@
+const db = require('../server/db.json')
+
+//global variable for album id
+let id = db.length
+
 module.exports = {
 
     getCompliment: (req, res) => {
@@ -20,10 +25,55 @@ module.exports = {
         res.status(200).send(randomFortune);
     },
 
-    getFood: (req,res) => {
+    // getFood: (req,res) => {
         
-        let newFood = req.body
-        res.status(200).send(newFood)
-    }
+    //     let newFood = req.body
+    //     res.status(200).send(newFood)
+    // Part 2:}
 
+    getAllAlbums : (req,res) => {
+        let allAlbums = db;
+        res.status(200).send(allAlbums)
+    },
+
+    createMusicAlbum : (req,res) => {
+        id++;
+        let newMusicAlbum = {...req.body,id:id}
+        db.push(newMusicAlbum)
+
+        res.status(200).send(db);
+    },
+
+    updateAlbumHearts : (req,res) => {
+        id++;
+        const {album_id} = req.params;
+        const {type} = req.body;
+
+        for(let i=0; i < db.length; i++) {
+            if(db[i].id === +album_id) {
+                if(type === 'increaseHearts') {
+                    db[i].albumHearts++;
+                }
+                if(db[i].albumHearts > 0 && type==='decreaseHearts') {
+                    db[i].albumHearts--;
+                }
+            }
+            
+        }
+        res.status(200).send(db)
+    },
+
+    deleteAlbum : (req,res) => {
+        id++;
+        const {album_id} = req.params;
+
+        for(let i=0; i < db.length; i++) {
+            if(db[i].id === +album_id) {
+                db.splice(i,1)
+            }
+            
+        }
+        res.status(200).send(db)
+        
+    }
 }

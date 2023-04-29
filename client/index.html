@@ -2,16 +2,53 @@
 <html>
   <head>
     <title>Back End Assessment</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="container">
     <button id="complimentButton">Get a compliment</button>
     <button id="fortuneButton">Get a fortune</button>
     
-    <form action="">
+    <!-- <form action="">
       <input type="text" id="food" placeholder="Favorite Food">
       <button id="foodBtn">Enter</button>
-    </form>
+    </form> -->
     
+    <!--Part 2-->
+    <header>
+      <h1>Top Music Albums Worldwide</h1>
+    </header>
+
+    <main>
+
+      <form>
+        <input type="text" id="title" placeholder="Music Album Title">
+        <input type="text" id="img" placeholder="Music Album Image Url">
+      
+        <section id="radio-container">
+          <p>Amount of Hearts &#10084;:</p>
+          <div id="radio-container">
+            <label for="one">
+              <input type="radio" name="hearts" value="1" id="one"> 1
+            </label>
+            <label for="two">
+              <input type="radio" name="hearts" value="2" id="two"> 2
+            </label>
+            <label for="three">
+              <input type="radio" name="hearts" value="3" id="three"> 3
+            </label>
+            <label for="four">
+              <input type="radio" name="hearts" value="4" id="four"> 4
+            </label>
+            <label for="five">
+              <input type="radio" name="hearts" value="5" id="five"> 5
+            </label>
+          </div>
+        </section>
+        <button>Submit</button>
+      </form>
+
+      <section id="album-container"></section>
+    </main>
 
     <script src="../node_modules/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>

@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "albumTitle": "BTS Map of the Soul: 7",
+      "albumHearts": 5,
+      "albumImageURL" : "https://m.media-amazon.com/images/I/41s8NCZUMvL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 2,
+      "albumTitle": "BTS Love Yourself: Answer",
+      "albumHearts": 4,
+      "albumImageURL" : "https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+    },
+    {
+      "id": 3,
+      "albumTitle": "BTS MAP OF THE SOUL: PERSONA",
+      "albumHearts": 4,
+      "albumImageURL" : "https://upload.wikimedia.org/wikipedia/en/5/5c/BTS_-_Map_of_the_Soul_Persona.png"
+    }
+  ]
