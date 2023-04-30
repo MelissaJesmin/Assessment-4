@@ -117,8 +117,8 @@ function createAlbumCard(album) {
     albumCard.classList.add('album-card')
 
     albumCard.innerHTML = `<img alt='album cover' src=${album.albumImageURL} class="album-cover"/>
-    <p class="album-title">${album.albumTitle}</p>
-    <p class="album-title">${album.albumArtist}</p>
+    <p class="album-title"> ${album.albumTitle}</p>
+    <p class="album-artist">Artist: ${album.albumArtist}</p>
         <div class="btns-container">
         <button onclick="updateAlbum(${album.id}, 'decreaseHearts')">💔</button>
         <p class="album-hearts">${album.albumHearts} hearts</p>

@@ -1,0 +1,147 @@
+/* will update soon */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  “Comic Sans MS”, “Comic Sans”, monospace;
+}
+
+body {
+    background-image: url('https://wallpaperaccess.com/full/2641048.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    background-color: #f5ceff;
+}
+#container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+header {
+    height: 100px; 
+    font-size: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 450px;
+    height: 350px;
+    background-color: rgb(251, 237, 255);
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 60px;
+    padding: 50px;
+}
+
+button {
+    background-color: #e683ff;
+    width: 85px;
+    height: 35px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin: 10px;
+    align-items: center;
+}
+
+input{
+    width: 65%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #e600ff;
+    color: #9e00b6;
+    background-color: rgb(255, 253, 255);
+}
+
+h2 {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 80px; 
+    background-color: #ed86fd;
+    font-size: 30px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+#hearts-container {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    width: 105px;
+}
+
+#radio-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #9e00b6;
+}
+
+#album-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.album-cover {
+    width: 300px; 
+    height: 320px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.album-card {
+    background-color:#f9cfff ;
+    width: 350px;
+    margin: 20px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    color:#9e00b6
+}
+
+.album-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.album-artist{
+    font-size: 15px;
+    margin: 0;
+}
+
+.album-hearts {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.btns-container {
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
