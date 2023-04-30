@@ -25,11 +25,7 @@ module.exports = {
         res.status(200).send(randomFortune);
     },
 
-    // getFood: (req,res) => {
-        
-    //     let newFood = req.body
-    //     res.status(200).send(newFood)
-    // Part 2:}
+    // Part 2
 
     getAllAlbums : (req,res) => {
         let allAlbums = db;
